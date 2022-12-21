@@ -16,7 +16,7 @@ const LandingPage = () => {
       <div className="container">
         <h1 className="display-1 text-center">Top tourist places</h1>
         <div className="d-flex m-2">
-          {city.map((item) => {
+        {city.map((item) => {
             return (
               <>
                 <div className="card m-2" style={{ width: 20 + "rem" }}>
