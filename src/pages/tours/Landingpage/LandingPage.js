@@ -25,7 +25,8 @@ const LandingPage = () => {
                     <p className="text-start fw-bold">{item.name}</p>
                     <h5 className="justify-content-end text-primary bg-aqua">${item.price}</h5>
                   </div>
-
+                  <div>
+                  </div>
                 
                 </div>
               </>
