@@ -27,7 +27,9 @@ const LandingPage = () => {
                   </div>
                   <div>
                   </div>
-                
+                <p className="card-text">
+                  {item.info}
+                </p>
                 </div>
               </>
             );
