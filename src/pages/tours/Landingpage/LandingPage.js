@@ -30,6 +30,7 @@ const LandingPage = () => {
                 <p className="card-text">
                   {item.info}
                 </p>
+                hello
                 </div>
               </>
             );
