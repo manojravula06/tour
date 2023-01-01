@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getTours } from "../../../API/Tours";
+import Tour from "../tour/Tour";
 import img from "../../../images/img_missing.png";
 import Navbar from "../../../components/Navbar/Navbar";
 const LandingPage = () => {
@@ -25,7 +26,7 @@ const LandingPage = () => {
     <div>
         <Navbar/>
       <div className="sm-container m-5">
-
+        <Tour/>
         <h1 className="display-1 text-center">OUR TOURS</h1>
         {Loader()}
         {!isLoading && (
