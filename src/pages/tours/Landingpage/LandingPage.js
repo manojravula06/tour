@@ -12,7 +12,11 @@ const LandingPage = () => {
     setIsLoading(false);
   };
   const Loader = () => {
-    return isLoading && <div className="text-center">loading.....</div>;
+    return isLoading && <div className="position-absolute top-50 start-50">
+        <div className="spinner-border" role='status'>
+          <span className="visually-hidden">loading.....</span>
+        </div>
+      </div>
   };
   useEffect(() => {
     getData();
@@ -22,7 +26,7 @@ const LandingPage = () => {
         <Navbar/>
       <div className="sm-container m-5">
 
-        <h1 className="display-1 text-center">PLACES YOU CAN VISIT</h1>
+        <h1 className="display-1 text-center">OUR TOURS</h1>
         {Loader()}
         {!isLoading && (
           <>
@@ -38,7 +42,7 @@ const LandingPage = () => {
                           $ {item.price} Only{" "}
                         </h6>
                         <p className="card-text">{item.info}</p>
-                        <button className="btn btn-primary">visit now</button>
+                        <button className="btn btn-text-danger btn-outline-danger">Not intersted</button>
                       </div>
                     </div>
                   </>
