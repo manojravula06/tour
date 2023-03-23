@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+
+.single-tour img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  width:90vw;
+  max-width: 620px;
+  margin: 5rem 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.single-tour{
+  background: #fff;
+  border-radius: 0.25rem;
+  margin: 2rem 0;
+  box-shadow:0 5px 15px black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tour-info{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 1rem;
+}
+.single-tour button{
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: lightblue;
+  padding-left: 0.25;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.single-tour .delete{
+  display: block;
+  width: 200px;
+  margin: 1rem auto 1rem auto;
+  color: #ff3131;
+  border: 1px solid red;
+  border-radius: 0.25rem;
+  padding: 0.25rem, 0.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
 }
